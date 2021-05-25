@@ -1,0 +1,8 @@
+#cloud-config
+
+locale: en_US.UTF-8
+package_update: true
+package_upgrade: true
+
+runcmd:
+    - 'curl -Ss -L https://raw.githubusercontent.com/webcloud-it/cloud-init/main/ubuntu2004/setup.sh | bash'
