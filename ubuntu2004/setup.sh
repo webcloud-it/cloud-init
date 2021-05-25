@@ -8,6 +8,7 @@ sed -i 's/[#]*PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/s
 service sshd restart
 
 # docker
+mkdir -p /etc/docker/
 cat >/etc/docker/daemon.json <<"EOF"
 {
 	"log-driver": "json-file",
